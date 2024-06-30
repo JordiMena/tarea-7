@@ -1,0 +1,5 @@
+C:\CSharp\proyect\ControlDeInventario.Infrastructure\obj\Debug\net7.0\ControlDeInventario.Infrastructure.csproj.AssemblyReference.cache
+C:\CSharp\proyect\ControlDeInventario.Infrastructure\obj\Debug\net7.0\ControlDeInventario.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\CSharp\proyect\ControlDeInventario.Infrastructure\obj\Debug\net7.0\ControlDeInventario.Infrastructure.AssemblyInfoInputs.cache
+C:\CSharp\proyect\ControlDeInventario.Infrastructure\obj\Debug\net7.0\ControlDeInventario.Infrastructure.AssemblyInfo.cs
+C:\CSharp\proyect\ControlDeInventario.Infrastructure\obj\Debug\net7.0\ControlDeInventario.Infrastructure.csproj.CoreCompileInputs.cache
