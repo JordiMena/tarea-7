@@ -1,0 +1,4 @@
+C:\CSharp\proyect\ControlDeInventario.Application\obj\Debug\net7.0\ControlDeInventario.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\CSharp\proyect\ControlDeInventario.Application\obj\Debug\net7.0\ControlDeInventario.Application.AssemblyInfoInputs.cache
+C:\CSharp\proyect\ControlDeInventario.Application\obj\Debug\net7.0\ControlDeInventario.Application.AssemblyInfo.cs
+C:\CSharp\proyect\ControlDeInventario.Application\obj\Debug\net7.0\ControlDeInventario.Application.csproj.CoreCompileInputs.cache
