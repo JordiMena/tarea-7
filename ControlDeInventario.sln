@@ -1,0 +1,54 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDeInventario.Api", "ControlDeInventario.Api\ControlDeInventario.Api.csproj", "{50A3BB95-3776-462D-944C-5D3FF073D344}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDeInventario.Application", "ControlDeInventario.Application\ControlDeInventario.Application.csproj", "{130496EC-380F-4453-AB6F-697FB252001A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDeInventario.Domain", "ControlDeInventario.Domain\ControlDeInventario.Domain.csproj", "{83CFC29F-EC90-4301-BAF9-2C421B8F9176}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDeInventario.Infrastructure", "ControlDeInventario.Infrastructure\ControlDeInventario.Infrastructure.csproj", "{4E1B8AC2-F87B-407E-A641-C426E35CBD63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDeInventario.Ioc", "ControlDeInventario.Ioc\ControlDeInventario.Ioc.csproj", "{B08917B7-205E-4620-8B19-3BC3EAA70D39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDeInventario.Web", "ControlDeInventario.Web\ControlDeInventario.Web.csproj", "{01A689E1-1AA3-436C-8FA2-D92E3AFA2754}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A3BB95-3776-462D-944C-5D3FF073D344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A3BB95-3776-462D-944C-5D3FF073D344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A3BB95-3776-462D-944C-5D3FF073D344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A3BB95-3776-462D-944C-5D3FF073D344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{130496EC-380F-4453-AB6F-697FB252001A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130496EC-380F-4453-AB6F-697FB252001A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130496EC-380F-4453-AB6F-697FB252001A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130496EC-380F-4453-AB6F-697FB252001A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CFC29F-EC90-4301-BAF9-2C421B8F9176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CFC29F-EC90-4301-BAF9-2C421B8F9176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CFC29F-EC90-4301-BAF9-2C421B8F9176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CFC29F-EC90-4301-BAF9-2C421B8F9176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1B8AC2-F87B-407E-A641-C426E35CBD63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1B8AC2-F87B-407E-A641-C426E35CBD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1B8AC2-F87B-407E-A641-C426E35CBD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1B8AC2-F87B-407E-A641-C426E35CBD63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08917B7-205E-4620-8B19-3BC3EAA70D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08917B7-205E-4620-8B19-3BC3EAA70D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08917B7-205E-4620-8B19-3BC3EAA70D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08917B7-205E-4620-8B19-3BC3EAA70D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A689E1-1AA3-436C-8FA2-D92E3AFA2754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A689E1-1AA3-436C-8FA2-D92E3AFA2754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A689E1-1AA3-436C-8FA2-D92E3AFA2754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A689E1-1AA3-436C-8FA2-D92E3AFA2754}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACFCD33C-AD4D-4496-B0C1-D18DE6A0D32C}
+	EndGlobalSection
+EndGlobal
