@@ -1,6 +1,7 @@
-using Microsoft.AspNetCore.Mvc;
 using ControlDelInventario.Domain.Entities;
-using ControlDelInventario.Domain.Interfaces;
+using ControlDelInventario.Domain.Repository;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace ControlDelInventario.Api.Controllers
 {
@@ -16,14 +17,13 @@ namespace ControlDelInventario.Api.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public ActionResult<IEnumerable<Producto>> GetAll()
         {
-            var productos = _productoRepository.GetAll();
-            return Ok(productos);
+            return Ok(_productoRepository.GetAll());
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public ActionResult<Producto> GetById(int id)
         {
             var producto = _productoRepository.GetById(id);
             if (producto == null)
@@ -34,19 +34,26 @@ namespace ControlDelInventario.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Producto producto)
+        public ActionResult<Producto> Create(Producto producto)
         {
             _productoRepository.Add(producto);
-            return CreatedAtAction(nameof(Get), new { id = producto.Id }, producto);
+            return CreatedAtAction(nameof(GetById), new { id = producto.Id }, producto);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Producto producto)
+        public IActionResult Update(int id, Producto producto)
         {
             if (id != producto.Id)
             {
                 return BadRequest();
             }
+
+            var existingProducto = _productoRepository.GetById(id);
+            if (existingProducto == null)
+            {
+                return NotFound();
+            }
+
             _productoRepository.Update(producto);
             return NoContent();
         }
@@ -59,6 +66,7 @@ namespace ControlDelInventario.Api.Controllers
             {
                 return NotFound();
             }
+
             _productoRepository.Delete(id);
             return NoContent();
         }
