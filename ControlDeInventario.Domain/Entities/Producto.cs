@@ -1,4 +1,4 @@
-﻿using Proyecto.Domain.Entities;
+﻿using ControlDeInventario.Domain.Entities;
 
 namespace ControlDelInventario.Domain.Entities
 {

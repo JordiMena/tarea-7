@@ -1,5 +1,4 @@
 using ControlDelInventario.Domain.Entities;
-using Proyecto.Domain.Entities;
 
 namespace ControlDeInventario.Domain.Interfaces
 {

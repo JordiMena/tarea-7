@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "ControlDeInventario.Domain/1.0.0": {
+      "proyecto.Domain/1.0.0": {
         "runtime": {
-          "ControlDeInventario.Domain.dll": {}
+          "proyecto.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ControlDeInventario.Domain/1.0.0": {
+    "proyecto.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

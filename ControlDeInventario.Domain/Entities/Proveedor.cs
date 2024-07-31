@@ -1,6 +1,6 @@
 using ControlDelInventario.Domain.Entities;
 
-namespace Proyecto.Domain.Entities
+namespace ControlDelInventario.Domain.Entities
 {
     public class Proveedor
     {

@@ -1,6 +1,6 @@
 using ControlDelInventario.Domain.Entities;
 
-namespace Proyecto.Domain.Entities
+namespace ControlDeInventario.Domain.Entities
 {
     public class Categoria
     {
