@@ -1,8 +1,8 @@
-﻿using Proyecto.Domain.Entities;
-using Proyecto.Domain.Repository;
+﻿using ControlDelInventario.Domain.Entities;
+using ControlDelInventario.Domain.Repository;
 using System.Collections.Generic;
 
-namespace Proyecto.Application.Services
+namespace ControlDelInventario.Application.Services
 {
     public class InventarioService
     {
