@@ -1,5 +1,4 @@
 using ControlDelInventario.Domain.Entities;
-using ControlDelInventario.Domain.Repository;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,7 +10,7 @@ namespace ControlDelInventario.Infrastructure.Repositories
 
         public ProductoRepository(AppDbContext context)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _context = context;
         }
 
         public Producto GetById(int id)
