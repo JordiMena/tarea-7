@@ -1,4 +1,5 @@
-﻿using ControlDelInventario.Domain.Entities;
+﻿using ControlDeInventario.Domain.Interfaces;
+using ControlDelInventario.Domain.Entities;
 using ControlDelInventario.Domain.Repository;
 using System.Collections.Generic;
 
