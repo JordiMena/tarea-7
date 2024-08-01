@@ -1,3 +1,5 @@
+using ControlDeInventario.Domain.Entities;
+using ControlDeInventario.Infrastructure;
 using ControlDelInventario.Domain.Entities;
 using ControlDelInventario.Domain.Repository;
 using System.Collections.Generic;
@@ -7,9 +9,9 @@ namespace ControlDelInventario.Infrastructure.Repositories
 {
     public class CategoriaRepository : ICategoriaRepository
     {
-        private readonly AppDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CategoriaRepository(AppDbContext context)
+        public CategoriaRepository(ApplicationDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }

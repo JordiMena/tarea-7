@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\ControlDelInventario.Domain\ControlDelInventario.Domain.csproj" />
+    <ProjectReference Include="..\ControlDeInventario.Domain\ControlDeInventario.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

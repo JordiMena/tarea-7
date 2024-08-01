@@ -1,3 +1,4 @@
+using ControlDeInventario.Infrastructure;
 using ControlDelInventario.Domain.Entities;
 using ControlDelInventario.Domain.Repository;
 using System.Collections.Generic;
@@ -7,9 +8,9 @@ namespace ControlDelInventario.Infrastructure.Repositories
 {
     public class ProveedorRepository : IProveedorRepository
     {
-        private readonly AppDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public ProveedorRepository(AppDbContext context)
+        public ProveedorRepository(ApplicationDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }

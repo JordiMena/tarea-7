@@ -1,3 +1,5 @@
+using ControlDeInventario.Domain.Interfaces;
+using ControlDeInventario.Infrastructure;
 using ControlDelInventario.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +8,9 @@ namespace ControlDelInventario.Infrastructure.Repositories
 {
     public class ProductoRepository : IProductoRepository
     {
-        private readonly AppDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public ProductoRepository(AppDbContext context)
+        public ProductoRepository(ApplicationDbContext context)
         {
             _context = context;
         }

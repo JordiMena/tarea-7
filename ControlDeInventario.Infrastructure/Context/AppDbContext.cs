@@ -1,11 +1,12 @@
-﻿using ControlDelInventario.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using ControlDeInventario.Domain.Entities;
+using ControlDelInventario.Domain.Entities;
 
-namespace ControlDelInventario.Infrastructure
+namespace ControlDeInventario.Infrastructure
 {
-    public class AppDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Cliente> Clientes { get; set; }

@@ -1,4 +1,5 @@
-using ControlDelInventario.Domain.Entities;
+using ControlDeInventario.Domain.Entities;
+using ControlDeInventario.Infrastructure;
 using ControlDelInventario.Domain.Repository;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,9 @@ namespace ControlDelInventario.Infrastructure.Repositories
 {
     public class ClienteRepository : IClienteRepository
     {
-        private readonly AppDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public ClienteRepository(AppDbContext context)
+        public ClienteRepository(ApplicationDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }

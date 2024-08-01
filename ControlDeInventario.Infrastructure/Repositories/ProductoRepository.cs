@@ -1,27 +1,25 @@
+using ControlDeInventario.Domain.Interfaces;
 using ControlDelInventario.Domain.Entities;
-using ControlDelInventario.Domain.Repository;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace ControlDelInventario.Infrastructure.Repositories
+namespace ControlDeInventario.Infrastructure.Repositories
 {
     public class ProductoRepository : IProductoRepository
     {
-        private readonly AppDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public ProductoRepository(AppDbContext context)
+        public ProductoRepository(ApplicationDbContext context)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
-        }
-
-        public Producto GetById(int id)
-        {
-            return _context.Productos.Find(id);
+            _context = context;
         }
 
         public IEnumerable<Producto> GetAll()
         {
             return _context.Productos.ToList();
+        }
+
+        public Producto GetById(int id)
+        {
+            return _context.Productos.Find(id);
         }
 
         public void Add(Producto producto)
@@ -38,7 +36,7 @@ namespace ControlDelInventario.Infrastructure.Repositories
 
         public void Delete(int id)
         {
-            var producto = _context.Productos.FirstOrDefault(p => p.Id == id);
+            var producto = _context.Productos.Find(id);
             if (producto != null)
             {
                 _context.Productos.Remove(producto);
