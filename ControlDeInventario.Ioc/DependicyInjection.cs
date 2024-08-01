@@ -1,8 +1,8 @@
-﻿using ControlDelInventario.Domain.Repository;
-using ControlDelInventario.Infrastructure.Repositories;
+﻿using ControlDeInventario.Domain.Interfaces;
+using ControlDeInventario.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ControlDelInventario.IoC
+namespace ControlDeInventario.IoC
 {
     public static class DependencyInjection
     {
@@ -13,4 +13,3 @@ namespace ControlDelInventario.IoC
         }
     }
 }
-
