@@ -1,3 +1,4 @@
+using ControlDeInventario.Domain.Entities;
 using ControlDelInventario.Domain.Entities;
 using System.Collections.Generic;
 
