@@ -1,3 +1,4 @@
+using ControlDeInventario.Domain.Interfaces;
 using ControlDelInventario.Domain.Entities;
 using ControlDelInventario.Domain.Repository;
 using Microsoft.AspNetCore.Mvc;

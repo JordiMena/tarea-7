@@ -2952,6 +2952,26 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "ControlDeInventario.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ControlDeInventario.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ControlDeInventario.Domain.dll": {}
+        }
+      },
+      "ControlDeInventario.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ControlDeInventario.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ControlDeInventario.Utils.dll": {}
+        }
       }
     }
   },
@@ -8449,10 +8469,22 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "ControlDeInventario.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ControlDeInventario.Domain/ControlDeInventario.Domain.csproj",
+      "msbuildProject": "../ControlDeInventario.Domain/ControlDeInventario.Domain.csproj"
+    },
+    "ControlDeInventario.Utils/1.0.0": {
+      "type": "project",
+      "path": "../ControlDeInventario.Utils/ControlDeInventario.Utils.csproj",
+      "msbuildProject": "../ControlDeInventario.Utils/ControlDeInventario.Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "ControlDeInventario.Domain >= 1.0.0",
+      "ControlDeInventario.Utils >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -8482,7 +8514,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\CSharp\\proyect\\ControlDeInventario.Domain\\ControlDeInventario.Domain.csproj": {
+              "projectPath": "C:\\CSharp\\proyect\\ControlDeInventario.Domain\\ControlDeInventario.Domain.csproj"
+            },
+            "C:\\CSharp\\proyect\\ControlDeInventario.Utils\\ControlDeInventario.Utils.csproj": {
+              "projectPath": "C:\\CSharp\\proyect\\ControlDeInventario.Utils\\ControlDeInventario.Utils.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
